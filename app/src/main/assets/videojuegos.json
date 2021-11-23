@@ -1,0 +1,32 @@
+[
+  {
+    "name": "The Legend of Zelda: Breath of the Wild",
+    "score": 9.7,
+    "description": "A masterpiece of design that shows Nintendo at the top of his game and shows an incredible lesson in creating a open world game in all its meanings.",
+    "urlPicture": "https://res.cloudinary.com/dpxbrsdln/image/upload/v1637454670/zelda_va4omh.png"
+  },
+  {
+    "name": "The Last Guardian",
+    "score": 8.2,
+    "description": "The Last Guardian is a blast from the past. From when Fumita Ueda marveled us with the relationship between Ico and Yorda, or the fights against the colossi. Trico is his new achievement and it lives up to his reputation. Some technical issues muddle the work, but at least it's one with a lot of heart.",
+    "urlPicture": "https://res.cloudinary.com/dpxbrsdln/image/upload/v1637455131/lastguardian_akzxiv.jpg"
+  },
+  {
+    "name": "PSYCHONAUTS 2",
+    "score": 8.7,
+    "description": "This is a fantastic action platformer, full of imagination and a great sense of humor, that proves, once again, the talent and creativity you can find in Double Fine.",
+    "urlPicture": "https://res.cloudinary.com/dpxbrsdln/image/upload/v1637456192/psychonauts2_ycyjic.jpg"
+  },
+  {
+    "name": "Super Mario Odyssey",
+    "score": 9.7,
+    "description": "Sandbox Mario is back in a game that feels as joyous as limitless. Explore, experiment and dare to try new things with the brilliant capture mechanic and a stunning move set that makes Mario shine again.",
+    "urlPicture": "https://res.cloudinary.com/dpxbrsdln/image/upload/v1637456872/supermario_jmmuby.jpg"
+  },
+  {
+    "name": "Ori an the Will of the Wisps",
+    "score": 9.3,
+    "description": "If you don't have Xbox or PC, or simply wanna enjoy it in portable mode, Ori and the Will of the Wisps it's one of the greatest adventures of 2020, and now arrives in a neat physical edition that will let you treasure it with other extras like the ost and a bunch of postcards. A great conversion of a superb metroidvania.",
+    "urlPicture": "https://res.cloudinary.com/dpxbrsdln/image/upload/v1637457572/ori_spaxen.jpg"
+  }
+]
