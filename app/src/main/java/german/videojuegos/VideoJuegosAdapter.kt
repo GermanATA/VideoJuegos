@@ -8,7 +8,10 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.squareup.picasso.Picasso
 
-class VideoJuegosAdapter(private val videojuegoList: ArrayList<VideoJuegoItem>) : RecyclerView.Adapter<VideoJuegosAdapter.ViewHolder>() {
+class VideoJuegosAdapter(
+    private val videojuegoList: ArrayList<VideoJuegoItem>,
+    private val onItemClicked: (VideoJuegoItem)->Unit,
+    ) : RecyclerView.Adapter<VideoJuegosAdapter.ViewHolder>() {
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -18,6 +21,7 @@ class VideoJuegosAdapter(private val videojuegoList: ArrayList<VideoJuegoItem>) 
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val videojuego = videojuegoList[position]
+        holder.itemView.setOnClickListener{onItemClicked(videojuegoList[position])}
         holder.bind(videojuego)
     }
 

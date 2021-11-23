@@ -1,5 +1,6 @@
 package german.videojuegos
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -20,13 +21,19 @@ class ListVideoJuegosActivity : AppCompatActivity() {
 
         listaVideoJuegos = loadMockVideoJuegosFromJson()
 
-        videojuegosAdapter = VideoJuegosAdapter(listaVideoJuegos)
+        videojuegosAdapter = VideoJuegosAdapter(listaVideoJuegos, onItemClicked = {onVideoJuegoClicked(it)})
 
         videojuegosRecyclerView.apply {
             layoutManager = LinearLayoutManager(context)
             adapter = videojuegosAdapter
             setHasFixedSize(false)
         }
+    }
+
+    private fun onVideoJuegoClicked(videoJ: VideoJuegoItem) {
+        val intent = Intent(this,MainActivity::class.java)
+        intent.putExtra("videojuego",videoJ)
+        startActivity(intent)
     }
 
     private fun loadMockVideoJuegosFromJson():ArrayList<VideoJuegoItem>{

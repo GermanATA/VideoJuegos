@@ -2,6 +2,7 @@ package german.videojuegos
 
 
 import com.google.gson.annotations.SerializedName
+import java.io.Serializable
 
 data class VideoJuegoItem(
     @SerializedName("description")
@@ -12,4 +13,4 @@ data class VideoJuegoItem(
     val score: Double,
     @SerializedName("urlPicture")
     val urlPicture: String
-)
+) : Serializable
